@@ -1,0 +1,8 @@
+*_files/
+.DS_Store
+.claude/
+danton-csulb-data-day-2026.html
+.quarto/
+/.quarto/
+
+**/*.quarto_ipynb
