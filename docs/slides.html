@@ -412,14 +412,12 @@
 </section>
 <section id="authenticate-login" class="slide level2">
 <h2>Authenticate (<code>/login</code>)</h2>
-<div class="fragment">
 <ol type="1">
 <li>In terminal, type <code>copilot</code> and press Enter</li>
 <li>Copilot will ask you to trust the folder — choose <strong>“Yes, proceed”</strong></li>
 <li>Type <code>/login</code></li>
 <li>Select <strong>“GitHub.com”</strong></li>
 </ol>
-</div>
 </section>
 <section id="authenticate-login-1" class="slide level2">
 <h2>Authenticate (<code>/login</code>)</h2>
@@ -485,7 +483,7 @@
 <td><strong>L</strong>i<strong>s</strong>t — “What’s in this folder?”</td>
 </tr>
 <tr class="odd">
-<td><code>cd foldername</code></td>
+<td><code>cd dirname</code></td>
 <td><strong>C</strong>hange <strong>d</strong>irectory — “Go into this folder”</td>
 </tr>
 <tr class="even">
@@ -493,7 +491,7 @@
 <td>Go up one folder</td>
 </tr>
 <tr class="odd">
-<td><code>mkdir foldername</code></td>
+<td><code>mkdir dirname</code></td>
 <td><strong>M</strong>a<strong>k</strong>e a new <strong>dir</strong>ectory (folder)</td>
 </tr>
 </tbody>
@@ -533,53 +531,35 @@
 <p><a href="https://github.blog/ai-and-ml/github-copilot/how-squad-runs-coordinated-ai-agents-inside-your-repository/">Read the blog post</a></p>
 </div>
 </section>
-<section id="prerequisites" class="slide level2">
-<h2>Prerequisites</h2>
+<section id="installing-squad" class="slide level2">
+<h2>Installing Squad</h2>
+<p><strong>Prerequisites</strong></p>
 <p>Install <strong>Node.js</strong> (required for Squad)</p>
 <ul>
 <li>Download at <a href="https://nodejs.org/en/download"><strong>nodejs.org/en/download</strong></a></li>
 </ul>
-</section>
-<section id="install-squad" class="slide level2">
-<h2>Install Squad</h2>
+<p><strong>Install Squad</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href=""></a><span class="ex">npm</span> install <span class="at">-g</span> @bradygaster/squad-cli</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Then initialize it:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href=""></a><span class="ex">squad</span> init</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="load-squad" class="slide level2">
-<h2>Load Squad</h2>
-<p>Squad is still experimental — instead of running <code>squad</code> directly, load it as an agent inside Copilot CLI:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href=""></a><span class="ex">copilot</span> <span class="at">--agent</span> squad</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section></section>
 <section>
 <section id="goal-3-build-a-snake-game" class="title-slide slide level1 center">
 <h1>Goal 3: Build a Snake Game</h1>
 
 </section>
-<section id="create-a-project-folder" class="slide level2">
-<h2>Create a Project Folder</h2>
-<p>Now you know what these commands mean!</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href=""></a><span class="bu">cd</span> ~</span>
-<span id="cb8-2"><a href=""></a><span class="fu">mkdir</span> repos</span>
-<span id="cb8-3"><a href=""></a><span class="bu">cd</span> repos</span>
-<span id="cb8-4"><a href=""></a><span class="fu">mkdir</span> snake-game</span>
-<span id="cb8-5"><a href=""></a><span class="bu">cd</span> snake-game</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="fragment">
-<p><code>~</code> means “my home folder” — a shortcut so you don’t have to type the full path.</p>
-</div>
-</section>
-<section id="set-up-git" class="slide level2">
-<h2>Set Up Git</h2>
-<p>Squad needs a git repo. Run these (use <strong>your</strong> name and email):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href=""></a><span class="fu">git</span> init</span>
-<span id="cb9-2"><a href=""></a><span class="fu">git</span> config user.name <span class="st">"Jane Doe"</span></span>
-<span id="cb9-3"><a href=""></a><span class="fu">git</span> config user.email <span class="st">"jane.doe@student.csulb.edu"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="set-up-your-project-and-go" class="slide level2">
+<h2>Set Up Your Project and Go</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href=""></a><span class="bu">cd</span> ~</span>
+<span id="cb6-2"><a href=""></a><span class="fu">mkdir</span> repos <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> repos</span>
+<span id="cb6-3"><a href=""></a><span class="fu">mkdir</span> snake-game <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> snake-game</span>
+<span id="cb6-4"><a href=""></a><span class="fu">git</span> init</span>
+<span id="cb6-5"><a href=""></a><span class="fu">git</span> config user.name <span class="st">"Your Name"</span></span>
+<span id="cb6-6"><a href=""></a><span class="fu">git</span> config user.email <span class="st">"your.email@student.csulb.edu"</span></span>
+<span id="cb6-7"><a href=""></a><span class="ex">squad</span> init</span>
+<span id="cb6-8"><a href=""></a><span class="ex">copilot</span> <span class="at">--yolo</span> <span class="at">--effort</span> xhigh <span class="at">--agent</span> squad</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="hire-a-squad" class="slide level2">
 <h2>Hire a Squad</h2>
-<p>Now start Squad:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href=""></a><span class="ex">copilot</span> <span class="at">--agent</span> squad</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Then use this prompt:</p>
+<p>Use this prompt:</p>
 <blockquote>
 <p>hire a team to create a snake game i can play locally using python. use uv for package management.</p>
 </blockquote>

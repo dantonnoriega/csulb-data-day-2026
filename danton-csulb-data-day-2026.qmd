@@ -191,7 +191,6 @@ winget install GitHub.Copilot
 
 ## Authenticate (`/login`)
 
-. . .
 
 1. In terminal, type `copilot` and press Enter
 2. Copilot will ask you to trust the folder — choose **"Yes, proceed"**
@@ -246,9 +245,9 @@ The terminal always has a **current location** — the folder you're "standing i
 |---|---|
 | `pwd` | **P**rint **w**orking **d**irectory — "Where am I?" |
 | `ls` | **L**i**s**t — "What's in this folder?" |
-| `cd foldername` | **C**hange **d**irectory — "Go into this folder" |
+| `cd dirname` | **C**hange **d**irectory — "Go into this folder" |
 | `cd ..` | Go up one folder |
-| `mkdir foldername` | **M**a**k**e a new **dir**ectory (folder) |
+| `mkdir dirname` | **M**a**k**e a new **dir**ectory (folder) |
 
 ## Try It!
 
@@ -286,69 +285,38 @@ A single AI agent is powerful. But what if you had a **whole team**?
 
 [Read the blog post](https://github.blog/ai-and-ml/github-copilot/how-squad-runs-coordinated-ai-agents-inside-your-repository/)
 
-## Prerequisites
+## Installing Squad
+
+**Prerequisites**
 
 Install **Node.js** (required for Squad)
 
 - Download at [**nodejs.org/en/download**](https://nodejs.org/en/download)
 
-## Install Squad
+**Install Squad**
 
 ```bash
 npm install -g @bradygaster/squad-cli
 ```
 
-Then initialize it:
-
-```bash
-squad init
-```
-
-## Load Squad
-
-Squad is still experimental — instead of running `squad` directly, load it as an agent inside Copilot CLI:
-
-```bash
-copilot --agent squad
-```
-
 # Goal 3: Build a Snake Game
 
-## Create a Project Folder
-
-Now you know what these commands mean!
+## Set Up Your Project and Go
 
 ```bash
 cd ~
-mkdir repos
-cd repos
-mkdir snake-game
-cd snake-game
-```
-
-. . .
-
-`~` means "my home folder" — a shortcut so you don't have to type the full path.
-
-## Set Up Git
-
-Squad needs a git repo. Run these (use **your** name and email):
-
-```bash
+mkdir repos && cd repos
+mkdir snake-game && cd snake-game
 git init
-git config user.name "Jane Doe"
-git config user.email "jane.doe@student.csulb.edu"
+git config user.name "Your Name"
+git config user.email "your.email@student.csulb.edu"
+squad init
+copilot --yolo --effort xhigh --agent squad
 ```
 
 ## Hire a Squad
 
-Now start Squad:
-
-```bash
-copilot --agent squad
-```
-
-Then use this prompt:
+Use this prompt:
 
 > hire a team to create a snake game i can play locally using python. use uv for package management.
 
