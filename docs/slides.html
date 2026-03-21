@@ -535,11 +535,15 @@
 <h2>Installing Squad</h2>
 <p><strong>Prerequisites</strong></p>
 <p>Install <strong>Node.js</strong> (required for Squad)</p>
-<ul>
-<li>Download at <a href="https://nodejs.org/en/download"><strong>nodejs.org/en/download</strong></a></li>
-</ul>
+<p>macOS</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href=""></a><span class="ex">curl</span> <span class="at">-o-</span> https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh <span class="kw">|</span> <span class="fu">bash</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Windows</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href=""></a><span class="co"># Download and install Chocolatey:</span></span>
+<span id="cb6-2"><a href=""></a><span class="ex">powershell</span> <span class="at">-c</span> <span class="st">"irm https://community.chocolatey.org/install.ps1|iex"</span></span>
+<span id="cb6-3"><a href=""></a><span class="co"># Download and install Node.js:</span></span>
+<span id="cb6-4"><a href=""></a><span class="ex">choco</span> install nodejs <span class="at">--version</span><span class="op">=</span><span class="st">"24.14.0"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Install Squad</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href=""></a><span class="ex">npm</span> install <span class="at">-g</span> @bradygaster/squad-cli</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href=""></a><span class="ex">npm</span> install <span class="at">-g</span> @bradygaster/squad-cli</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section></section>
 <section>
 <section id="goal-3-build-a-snake-game" class="title-slide slide level1 center">
@@ -548,14 +552,14 @@
 </section>
 <section id="set-up-your-project-and-go" class="slide level2">
 <h2>Set Up Your Project and Go</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href=""></a><span class="bu">cd</span> ~</span>
-<span id="cb6-2"><a href=""></a><span class="fu">mkdir</span> repos <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> repos</span>
-<span id="cb6-3"><a href=""></a><span class="fu">mkdir</span> snake-game <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> snake-game</span>
-<span id="cb6-4"><a href=""></a><span class="fu">git</span> init</span>
-<span id="cb6-5"><a href=""></a><span class="fu">git</span> config user.name <span class="st">"Your Name"</span></span>
-<span id="cb6-6"><a href=""></a><span class="fu">git</span> config user.email <span class="st">"your.email@student.csulb.edu"</span></span>
-<span id="cb6-7"><a href=""></a><span class="ex">squad</span> init</span>
-<span id="cb6-8"><a href=""></a><span class="ex">copilot</span> <span class="at">--yolo</span> <span class="at">--effort</span> xhigh <span class="at">--agent</span> squad</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href=""></a><span class="bu">cd</span> ~</span>
+<span id="cb8-2"><a href=""></a><span class="fu">mkdir</span> repos <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> repos</span>
+<span id="cb8-3"><a href=""></a><span class="fu">mkdir</span> snake-game <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> snake-game</span>
+<span id="cb8-4"><a href=""></a><span class="fu">git</span> init</span>
+<span id="cb8-5"><a href=""></a><span class="fu">git</span> config user.name <span class="st">"Your Name"</span></span>
+<span id="cb8-6"><a href=""></a><span class="fu">git</span> config user.email <span class="st">"your.email@student.csulb.edu"</span></span>
+<span id="cb8-7"><a href=""></a><span class="ex">squad</span> init</span>
+<span id="cb8-8"><a href=""></a><span class="ex">copilot</span> <span class="at">--yolo</span> <span class="at">--effort</span> xhigh <span class="at">--agent</span> squad</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="hire-a-squad" class="slide level2">
 <h2>Hire a Squad</h2>
