@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.9.36">
 
   <meta name="author" content="Danton Noriega-Goodwin">
-  <meta name="dcterms.date" content="2026-03-28">
+  <meta name="dcterms.date" content="2026-03-21">
   <title>Agentic Coding with GitHub Copilot CLI and Squad</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -215,7 +215,7 @@
 </div>
 </div>
 
-  <p class="date">2026-03-28</p>
+  <p class="date">2026-03-21</p>
 </section>
 <section id="about-danton" class="slide level2">
 <h2>About Danton</h2>
@@ -226,18 +226,19 @@
 <li>Fun Facts 🥏 <a href="https://open.spotify.com/track/24UE81wK4vdDZvK6emX6i9?si=9fb5b4df255c4b8c">🎸</a></li>
 </ul>
 </section>
-<section id="about-cory" class="slide level2">
-<h2>About Cory</h2>
+<section id="about-our-assistants" class="slide level2">
+<h2>About Our Assistants</h2>
 <ul>
-<li>Cory Suzuki</li>
-<li><em>(details TBD)</em></li>
-</ul>
-</section>
-<section id="about-diana" class="slide level2">
-<h2>About Diana</h2>
+<li><strong>Nathaniel Talampas</strong>
 <ul>
-<li>Diana Jimenez</li>
-<li><em>(details TBD)</em></li>
+<li>CSULB Math &amp; Stats Department</li>
+<li>Fun Facts 🎸 🎶 🏄‍♂️</li>
+</ul></li>
+<li><strong>Cory Suzuki</strong>
+<ul>
+<li>CSULB Math &amp; Stats Department</li>
+<li>Fun Facts 🏃‍♂️ 🏞 📖 🎮 🎵</li>
+</ul></li>
 </ul>
 </section>
 <section>
@@ -392,33 +393,21 @@
 </section>
 <section id="open-terminal" class="slide level2">
 <h2>Open Terminal</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="macos">macOS</h3>
-<p>Open the <strong>Terminal</strong> app</p>
-<p>(Search “Terminal” in Spotlight)</p>
-</div><div class="column" style="width:50%;">
-<h3 id="windows">Windows</h3>
-<p>Open <strong>PowerShell</strong> (v6 or higher)</p>
-<p>(Search “PowerShell” in Start Menu)</p>
-</div></div>
+<p><strong>macOS:</strong> Open the <strong>Terminal</strong> app (search “Terminal” in Spotlight)</p>
+<p><strong>Windows:</strong> Open <strong>PowerShell</strong> v6+ (search “PowerShell” in Start Menu)</p>
 <div class="fragment">
 <p>Don’t panic — it’s just a text box where you type commands.</p>
 </div>
 </section>
 <section id="install-copilot-cli" class="slide level2">
 <h2>Install Copilot CLI</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="macos-1">macOS</h3>
+<p><strong>macOS</strong></p>
 <p>Via Homebrew:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href=""></a><span class="ex">brew</span> install copilot-cli</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Or via install script:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href=""></a><span class="ex">curl</span> <span class="at">-fsSL</span> https://gh.io/copilot-install <span class="kw">|</span> <span class="fu">bash</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div><div class="column" style="width:50%;">
-<h3 id="windows-1">Windows</h3>
+<p><strong>Windows</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource powershell number-lines code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href=""></a>winget install GitHub<span class="op">.</span><span class="fu">Copilot</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div></div>
 <p><a href="https://docs.github.com/en/copilot/how-tos/copilot-cli/set-up-copilot-cli/install-copilot-cli">Full docs</a></p>
 </section>
 <section id="authenticate-login" class="slide level2">
@@ -436,7 +425,7 @@
 <h2>Authenticate (<code>/login</code>)</h2>
 <ol start="5" type="1">
 <li>You’ll see a one-time code like <code>1234-5678</code> — press any key to copy &amp; open browser</li>
-<li>Paste code at <a href="https://github.com/login/device"><strong>github.com/login/device</strong></a></li>
+<li>Sign in (if needed), select account, and paste code to authorize device</li>
 <li>Click <strong>“Authorize GitHub Copilot CLI”</strong></li>
 <li>Return to terminal — you’re logged in!</li>
 </ol>
@@ -553,7 +542,7 @@
 </section>
 <section id="install-squad" class="slide level2">
 <h2>Install Squad</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href=""></a><span class="ex">npm</span> install <span class="at">-g</span> @anthropic-ai/squad</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href=""></a><span class="ex">npm</span> install <span class="at">-g</span> @bradygaster/squad-cli</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Then initialize it:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href=""></a><span class="ex">squad</span> init</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>

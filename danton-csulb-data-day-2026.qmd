@@ -165,7 +165,9 @@ We're using **Copilot CLI** because the **Student Developer Pack** gives you acc
 
 Don't panic — it's just a text box where you type commands.
 
-## Install Copilot CLI — macOS
+## Install Copilot CLI
+
+**macOS**
 
 Via Homebrew:
 
@@ -179,7 +181,7 @@ Or via install script:
 curl -fsSL https://gh.io/copilot-install | bash
 ```
 
-## Install Copilot CLI — Windows
+**Windows**
 
 ```powershell
 winget install GitHub.Copilot
@@ -199,7 +201,7 @@ winget install GitHub.Copilot
 ## Authenticate (`/login`)
 
 5. You'll see a one-time code like `1234-5678` — press any key to copy & open browser
-6. Paste code at [**github.com/login/device**](https://github.com/login/device)
+6. Sign in (if needed), select account, and paste code to authorize device
 7. Click **"Authorize GitHub Copilot CLI"**
 8. Return to terminal — you're logged in!
 
