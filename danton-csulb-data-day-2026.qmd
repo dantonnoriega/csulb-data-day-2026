@@ -331,7 +331,7 @@ copilot --yolo --effort xhigh --agent squad
 
 Use this prompt:
 
-> hire a team to create a snake game i can play locally using python. use uv for package management.
+> hire a team to create a snake game i can play locally using python. use uv for package management. begin building the game immediately after hiring.
 
 . . .
 
