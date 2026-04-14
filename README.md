@@ -42,10 +42,10 @@ git init
 git config user.name "Your Name"
 git config user.email "your.email@student.csulb.edu"
 squad init
-copilot --agent squad
+copilot --agent squad --yolo --effort xhigh
 ```
 
-Then prompt: *"hire a team to create a snake game i can play locally using python. use uv for package management."*
+Then prompt: *"hire a team to create a snake game i can play locally using python. use uv for package management. begin building the game immediately after hiring."*
 
 ## Resources
 
